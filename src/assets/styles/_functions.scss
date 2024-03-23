@@ -1,6 +1,6 @@
 
 @function text-height($n){
-    @return ((100vh - $n) + fith-height()); 
+    @return ((100vh - $n) + sixth-height()); 
   
   }
 
@@ -9,7 +9,7 @@
 
 }
 
-@function fith-height(){
+@function sixth-height(){
     @return calc(100vh / 6);
 
 }

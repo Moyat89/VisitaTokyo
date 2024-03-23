@@ -73,7 +73,7 @@ header {
   top: $height-header-responsive;
   overflow-y: auto;
   height: text-height($height-header-responsive);
-  padding-bottom: fith-height() + $height-header-responsive;
+  padding-bottom: sixth-height() + $height-header-responsive + 5vh;
 
   >* {
     text-align: center;
@@ -89,7 +89,7 @@ header {
     right: 0;
     top: $height-header-big;
     height: text-height($height-header-big);
-    padding-bottom: fith-height() + $height-header-responsive;
+    padding-bottom: sixth-height() + $height-header-responsive;
   }
 
   @media (min-width: $big-dev-min-width) {
@@ -121,7 +121,7 @@ header {
   * {
     border-left: $standard-border;
     object-fit: scale-down;
-    height: fith-height();
+    height: sixth-height();
   }
 
 
