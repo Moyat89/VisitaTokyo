@@ -1,0 +1,15 @@
+
+@function text-height($n){
+    @return ((100vh - $n) + fith-height()); 
+  
+  }
+
+@function third-width(){
+    @return calc(100vw / 3);
+
+}
+
+@function fith-height(){
+    @return calc(100vh / 6);
+
+}

@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Tokio</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="#" title="Link a página principal"><i class="fa-solid fa-earth-asia"></i></a>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <div class="title">
+      <h1>Tokyo, capital de Japón</h1>
+    </div>
+    <div class="social">
+      <a href="#" title="Link a cuenta en Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#" title="Link a cuenta en Twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" title="Link a cuenta en Facebook"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </header>
+  <div class="main-container">
+    <p class="slogan">東京へようこそ!</p>
+    <p>La capital de Japón es una ciudad llena de contrastes. Por el día sus ajetreadas calles repletas de hombres de
+      negocios, los famosos Business Man, la convierten en uno de los ejes económicos de toda Asia. </p>
+    <p>Por las tardes, las finanzas dan paso a una puesta de sol que la convierte en una centro sagrado, con templos
+      milenarios que tranquilizan el alma de sus habitantes antes del anochecer. </p>
+    <p>En cuanto anochece, las luces artificiales la iluminan dándole la fama de la ciudad que nunca duerme, con neones
+      que le dotan aire un de otro mundo, de otro tiempo.</p>
+    <p>
+      Con el paso del COVID y la reapertura del país, Tokyo da la bienvenida a turistas nacionales e internacionales
+      por igual. Una ciudad que tiene mucho que ofrecer y que sumerge a cualquiera en una cultura tan exótico y
+      diferente a lo habitual
+      que parecerá que estás viviendo una aventura alien.
+    </p>
+    <p style="font-weight: bold;">Visita Tokyo!</p>
+
+  </div>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

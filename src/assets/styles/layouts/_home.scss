@@ -1,57 +1,130 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-size: larger;
 }
+
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
-}
-
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
-  }
-}
-
-.uoc-title {
+  height: $full-height;
+  width: $full-width;
+  overflow: hidden;
   font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
+  background-color: $primary-color;
+  align-items: center;
+  font-size: $font-size-responsive;
+  justify-content: center;
+  background-image: url("../images/tokyotower.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  text-align: center;
 
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+  a,
+  i:hover {
+    color: black;
+  }
+
+  @media (min-width: $big-dev-min-width) {
+    font-size: $font-size-big;
+  }
+
+
+}
+
+
+header {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  width: $full-width;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: $height-header-responsive;
+  border-bottom: $standard-border;
+
+
+  * {
+    margin: auto;
+    color: $primary-color;
+  }
+
+
+  @media (min-width: $med-dev-min-width) {
+    border: $standard-border;
+    height: $height-header-big;
+    flex-direction: row;
+  }
+
+}
+
+
+.main-container {
+  scrollbar-color: $scroll-color;
+  width: $full-width;
+  background-color: $background-color;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: $height-header-responsive;
+  overflow-y: auto;
+  height: text-height($height-header-responsive);
+  padding-bottom: fith-height() + $height-header-responsive;
+
+  >* {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+
+  }
+
+  @media (min-width: $med-dev-min-width) {
+    border-left: $standard-border;
+    border-right: $standard-border;
+    left: auto;
+    right: 0;
+    top: $height-header-big;
+    height: text-height($height-header-big);
+    padding-bottom: fith-height() + $height-header-responsive;
+  }
+
+  @media (min-width: $big-dev-min-width) {
+    width: third-width();
+
   }
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+.slogan {
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $primary-color;
+  font-weight: 800;
+}
+
+
+
+.footer-img {
+  scrollbar-color: $scroll-color;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: $full-width;
+  border-top: $standard-border;
+
+  * {
+    border-left: $standard-border;
+    object-fit: scale-down;
+    height: fith-height();
+  }
+
+
+  overflow-x: auto;
+
 }
