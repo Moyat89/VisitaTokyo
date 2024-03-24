@@ -82,6 +82,14 @@ header {
 
   }
 
+  .slogan {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $primary-color;
+    font-weight: 800;
+  }
+
   @media (min-width: $med-dev-min-width) {
     border-left: $standard-border;
     border-right: $standard-border;
@@ -98,13 +106,6 @@ header {
   }
 }
 
-.slogan {
-  font-size: 2rem;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: $primary-color;
-  font-weight: 800;
-}
 
 
 
