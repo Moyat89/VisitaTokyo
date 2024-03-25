@@ -1,15 +1,17 @@
+// Función para calcular el espacio a ocupar por el contenedor principal (altura)
+@function text-height($n) {
+    @return ((100vh - $n) + sixth-height());
 
-@function text-height($n){
-    @return ((100vh - $n) + sixth-height()); 
-  
-  }
+}
 
-@function third-width(){
+// Función para calcular el espacio a ocupar por el contenedor principal (anchura)
+@function third-width() {
     @return calc(100vw / 3);
 
 }
 
-@function sixth-height(){
+// Función para calcular el espacio a ocupar por el footer (altura)
+@function sixth-height() {
     @return calc(100vh / 6);
 
 }

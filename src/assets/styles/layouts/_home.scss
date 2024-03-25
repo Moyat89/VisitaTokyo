@@ -1,3 +1,5 @@
+// Elementos Principales
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@
   font-size: larger;
 }
 
+// Formateo general del body
 
 body {
   display: flex;
@@ -17,6 +20,8 @@ body {
   align-items: center;
   font-size: $font-size-responsive;
   justify-content: center;
+
+  // Imagen de tokyo como fondo principal de la web
   background-image: url("../images/tokyotower.jpg");
   background-size: cover;
   background-repeat: repeat-y;
@@ -34,7 +39,7 @@ body {
 
 }
 
-
+// Header, cabecera
 header {
   background-color: $background-color;
   display: flex;
@@ -56,6 +61,8 @@ header {
   @media (min-width: $med-dev-min-width) {
     border: $standard-border;
     height: $height-header-big;
+
+    // Cambiamos la dirección del flex en la cabecera para que sea un menú horizontal cuando se visualiza en dispositivos medianos-grandes
     flex-direction: row;
   }
 

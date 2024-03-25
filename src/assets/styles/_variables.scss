@@ -1,14 +1,26 @@
+// Fuente a utilizar, reciclada de UOC boilerplate
 $font-family-serif: "Georgia", "Times New Roman", serif;
+
+// Colores principales de la web
 $primary-color: rgb(127 4 0);
 $background-color: rgba(255 255 255 / 70%);
+
+// Color del Scroll
 $scroll-color: $primary-color $background-color;
+
+// Tamaños de la fuente para la versión para móviles
 $font-size-responsive: 0.7rem;
+
+// Tamaños de la fuente para la versión para dispositivos grandes
 $font-size-big: 0.9rem;
+
+// Border standard a utilizar
 $standard-border: solid 5px black;
+
+// Tamaños generales
 $full-height: 100vh;
 $full-width: 100vw;
 $height-header-responsive: 20vh;
 $height-header-big: $height-header-responsive - 10vh;
 $med-dev-min-width: 571px;
 $big-dev-min-width: 992px;
-
